@@ -1,25 +1,34 @@
 <template>
   <UApp>
-    <UContainer>
-      <Logo />
-      <UContainer class="main">
-        <img class="gif" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjM3MmtqZWZ0cmVzNXdlc3BzdXgzaGZscHRyMHVwMXBka2gxbTM4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2AF5KbIaGVA36ZkiAm/giphy.gif" alt="Under Construction" />
-        <h1>Welcome to <span class="logo">M&Q</span></h1>
-        <p>We are glad to have you here.</p>
-        <p>This site is currently under construction.</p>
-        <p>We are working hard to bring you the best experience.</p>
-        <p>Stay tuned for updates!</p>
+    <v-app class="v-application">
+      <UContainer>
+        <Logo/>
+        <UContainer class="main">
+          <img class="gif"
+               src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjM3MmtqZWZ0cmVzNXdlc3BzdXgzaGZscHRyMHVwMXBka2gxbTM4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2AF5KbIaGVA36ZkiAm/giphy.gif"
+               alt="Under Construction"/>
+          <h1>Welcome to <span class="logo">M&Q</span></h1>
+          <p>We are glad to have you here.</p>
+          <p>This site is currently under construction.</p>
+          <p>We are working hard to bring you the best experience.</p>
+          <p>Stay tuned for updates!</p>
+        </UContainer>
       </UContainer>
-    </UContainer>
+    </v-app>
   </UApp>
 </template>
 
-<style>
+<style >
 
 body {
   height: 100svh;
   margin: 0;
   padding: 0;
+  background-image:
+      url("/assets/noise-texture.svg"),
+      radial-gradient(ellipse at bottom left, #2b4a5b 0%, #0e1a24 40%, #000000 100%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover, cover, cover;
 }
 
 .main {
@@ -28,6 +37,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 70svh;
+}
+
+.v-application {
+  background-color: transparent !important;
 }
 
 .gif {
